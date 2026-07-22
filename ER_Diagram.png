@@ -1,1 +1,50 @@
 
++-----------------------+
+|       PATIENTS        |
++-----------------------+
+| PK patient_id         |
+| first_name            |
+| last_name             |
+| gender                |
+| date_of_birth         |
+| phone                 |
+| email                 |
+| address               |
++-----------+-----------+
+            |
+            | 1
+            |
+            | M
++-----------+-----------+
+|     APPOINTMENTS      |
++-----------------------+
+| PK appointment_id     |
+| FK patient_id         |
+| FK doctor_id          |
+| appointment_date      |
+| appointment_time      |
+| status                |
+| diagnosis             |
+| bill_amount           |
++-----------+-----------+
+            |
+            | M
+            |
+            | 1
++-----------+-----------+
+|       DOCTORS         |
++-----------------------+
+| PK doctor_id          |
+| first_name            |
+| last_name             |
+| specialization        |
+| consultation_fee      |
+| phone                 |
+| email                 |
+| FK supervisor_id      |
++-----------------------+
+
+Doctor
+   ▲
+   │
+   └──────── supervisor_id
