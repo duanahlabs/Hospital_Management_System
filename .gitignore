@@ -1,1 +1,22 @@
 
+# PostgreSQL
+*.backup
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# VS Code
+.vscode/
+
+# IntelliJ
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
